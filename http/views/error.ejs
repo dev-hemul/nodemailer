@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+
+<div class="err-wrapper">
+<h1><%= errorStatus %> - <%= message %></h1>
+<div>
+<% if (errorStatus === 404) { %>
+    Такої сторінки не існує!
+<% } %>
+</div>
+    </div>
+</body>
+</html>
